@@ -1,0 +1,108 @@
+<html>
+    <title>Form Validation</title>
+    <link rel="Stylesheet" href="style/css">
+    <link href="javascript/validate.js">
+    <head>
+       
+    </head>
+    <body>
+        <h1 id="id1" >Submit your Application</h1>
+        <h4 id="id2">for.NET Developer(Fresher)</h4>
+        <h2 id="id3">Personal Information</h2>
+        
+        <form name="RegForm"  onsubmit="return validate()" id="Personaldetails" method="post">
+            <div id="info1">
+            <p>
+                <label for="Name">Name as per Id proof</label><br>
+                <input type="text" id="name" name="name" size="30">
+            </p>
+            
+            <p>
+                <label for="Email" id="lbltext">Email</label><br>
+                <input type="text" id="Email" name="Email" size="30">
+            </p>
+
+            <p>
+                <label for="Current Adress">Current Adress</label><br>
+                <textarea name=" Address line1" id="Address line1" cols="30" rows="2" placeholder="Address line1"></textarea>
+            </p>
+
+            <p>
+                <textarea name=" Address line2" id="Address line2" cols="30" rows="2" placeholder="Address line2"></textarea>
+              
+            </p>
+
+            
+            <p>
+                <input type="button" id="" value="chennai" >
+                <select name="Tamil Nadu" id="Tamil Nadu"  multiple size="4">
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Kerala">kerala</option>
+                    <option value="Andra Pradesh">Andra Pradesh</option>
+                    <option value="Karnataka">Karnataka</option>
+                </select>
+               
+            </p>
+
+            <p>
+                <label for="Permanent Adress">Permanent Adress</label><br>
+                <textarea name=" Address line1" id="Address line1" cols="30" rows="2" placeholder="Address line1"></textarea>
+            </p>
+
+            <p>
+                <textarea name=" Address line2" id="Address line2" cols="30" rows="2" placeholder="Address line2"></textarea>
+                <!-- <input type="text" id="Address line2" name="Address line2" placeholder="Address line2"> -->
+            </p>
+
+            <p>
+                <input type="text" value="City" width="15">
+                 <select name="City" id="city1" multiple size="4">
+                    <option value="Salem">Salem</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimabatore">Coimabatore</option>
+                    <option value="Trichy">Trichy</option>
+                </select>
+            </p>
+
+        </div>
+
+        <div id="info2">
+            <p>
+                <label for="Fathers Name">Fathers Name</label><br>
+                <input type="text" id="Fathers Name" size="30" name="Fathers Name">
+            </p>
+            <p>
+                <label for="Date Of Birth">Date Of Birth</label><br>
+                <input type="date" id="date" max="1979-12-31"  name="Datmax">
+            </p>
+
+            <p>
+                <label for="Mobile No">Mobile No</label><br>
+                <input type="text" id="mobileNo" size="30" name="Mobile No">
+            </p>
+        
+            <p>
+                <textarea name=" pincode" id="pincode" cols="30" rows="2" placeholder="pincode"></textarea>
+            </p>
+           
+            <p>
+                <textarea name=" Zipcode" id="zipcode" cols="30" rows="2" placeholder="Zipcode"></textarea>
+            </p>
+           
+            <p>
+                <label for="profile photo">Upload Profile Photo(JPG/PNG Format only)</label><br>
+                <p>Please upload a photo of yourself.Your face should be clearly visible.
+                    Make sure the image size doesnot exceed 500KB.
+                </p>
+                <input type="file" value="Upload Photo" id="photo" />
+
+            </p>
+            <p>
+                
+                <input type="button" value="submit"/> 
+            </p>
+        </div>
+
+        </form>
+    </body>
+</html>
